@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kontakt</title>
+        <link rel="stylesheet" href="stylekontakt.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="menu">
+            <div class="menu__header">
+                <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+                <label for="menu-checkbox" class="menu__toggler">Menu ☰</label>
+                <!--  <div class="menu__logo"> -->
+                <a href="/" class="menu__logo">
+                    <img class="logo--img" src="tata-logo-bila-obdelnik mensi.png" alt="Logo">
+                </a>
+                <!--   </div> -->
+            </div>
+            <div class="menu__body">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="/onas.html">O nás</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/modely.html">Modely</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/napsali.html">Napsali o nás</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/sluzby.html">Služby</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="aktuality.html">Aktuality</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script>
+			var checkbox = document.querySelector('.menu__checkbox');
+			var list = document.querySelector('.menu__list');
+
+			checkbox.addEventListener('change', function() {
+   				if(this.checked) {
+      		 list.classList.add('show');
+  			 } else {
+       		list.classList.remove('show');
+  				 }
+				});
+        </script>
+        <!-- ------------------------- headline ------------------------ -->
+        <div class="text__form">
+            <div class="text">
+                <div class="Headline__chapter__A">
+                    <div class="Chapter__chapter__1">
+                        <strong class="Chapter__prefix" style="opacity: 1;">Václav Horák</strong>
+                        <span class="Chapter__line-caption">
+                            <i style=""></i>
+                        </span>
+                        <strong style="opacity: 1;">Modelář / Konstruktér.</strong>
+                    </div>
+                </div>
+                <!-- ------------------------- form ------------------------ -->
+                <h2 class="">Napište nám</h2>
+                <form action="http://formular.itgirls.cz" method="post">
+
+                    <div class="form__left">
+                    <div class="skupinalabel">
+                        <label for="jmeno">Jmeno</label>
+                        <input
+                            type="text"
+                            name="jmeno"
+                            id="jmeno"
+                            placeholder="jmeno"
+                        >
+                    </div>
+                    <div class="skupinalabel">
+                        <label for="prijmeni">Prijmeni</label>
+                        <input
+                            type="text"
+                            name="prijmeni"
+                            id="prijmeni"
+                            placeholder="prijmeni"
+                        >
+                    </div>
+                
+                    <div class="vedlesebe">
+                        <label for="telefon">Telefon</label>
+                        <input
+                            type="number"
+                            name="telefon"
+                            id="telefon"
+                            placeholder="777 666 666"
+                        >
+                    </div>
+                    <div class="vedlesebe">
+                        <label for="email">email</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="email"
+                        >
+                    </div>
+                </div>
+                    <!-- ------------------------------- -->
+                    <div class="form__right">
+                        <div class="skupinalabel">
+                            <label for="vzkaz">Váš dotaz</label>
+                            <textarea
+                                name="vzkaz"
+                                id="vzkaz"
+                                rows="8"
+                                placeholder="dotaz"
+                            ></textarea>
+                        </div>
+                        <div class="check">
+                            <input
+                                type="checkbox"
+                                name="souhlas"
+                                id="souhlas"
+                                value="ANO"
+                            >
+                            <label for="souhlas">Souhlasím se zpracováním osobních údajů</label>
+                        </div>
+                        <div class="button">
+                            <button type="submit" id="button">Odeslat</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="footer footer__kontakt">
+            <p>
+                2023 &copy; Vaclav Horak modely Ferrari / 2023 &copy; Marketa Horak
+                <!-- <br> -->
+                / 
+            All rights reserved.
+            </p>
+        </footer>
+    </body>
+</html>

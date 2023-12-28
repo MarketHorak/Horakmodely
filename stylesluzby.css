@@ -1,0 +1,89 @@
+
+* {
+    box-sizing: border-box;
+   
+}
+
+
+.Section__title-cenik {
+
+/*     font-family: "Body-Font"; */
+    margin-top: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    line-height: 1.27em;
+    text-transform: uppercase;
+    color: #da291c; /* !important; */
+
+}
+
+.Container__wrapper {
+
+/*     display: flex; */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.Description__section {
+/*     display: flex;   */ 
+}
+.Description__subtitle {
+ 
+
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-bottom: 16px;
+    color: #da291c;
+}
+.Description__description{
+
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    font-size: 13px;
+    line-height: 1.6em;
+    color: #545353;
+    margin-bottom: 30px;
+}
+
+.Prices__section {
+/* display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; */
+    max-width: 500px; 
+}
+
+.Prices__cell {
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    align-items: center; 
+    gap:20px;
+    margin-bottom: 1em;
+}
+.left--description {
+    font-weight: 600;
+    color: #676767;
+}
+
+.cell--right {
+    text-align: right; 
+}
+
+
+.button {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.button__odkaz {
+    text-decoration: none;
+    padding:10px;
+    background-color: #da291c;
+    color: aliceblue;
+    border-radius: 0.4em;
+    text-align: center;
+   
+}
+

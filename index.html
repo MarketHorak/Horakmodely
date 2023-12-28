@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vaclav Horak ferrari models</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="stylecarousel.css">
+        <link rel="stylesheet" href="stylevideo.css">
+    </head>
+    <body>
+        <nav class="menu">
+            <div class="menu__header">
+                <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+                <label for="menu-checkbox" class="menu__toggler">Menu ☰</label>
+                <!--  <div class="menu__logo"> -->
+                <a href="/" class="menu__logo">
+                    <img class="logo--img" src="tata-logo-bila-obdelnik mensi.png" alt="Logo">
+                </a>
+                <!--   </div> -->
+            </div>
+            <div class="menu__body">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="/onas.html">O nás</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/modely.html">Modely</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/napsali.html">Napsali o nás</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/sluzby.html">Služby</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="aktuality.html">Aktuality</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script>
+			var checkbox = document.querySelector('.menu__checkbox');
+			var list = document.querySelector('.menu__list');
+
+			checkbox.addEventListener('change', function() {
+   				if(this.checked) {
+      		 list.classList.add('show');
+  			 } else {
+       		list.classList.remove('show');
+  				 }
+				});
+        </script>
+        <!-- CAROUSEL  Section -->
+        <div class="carousel">
+            <div class="progress-bar progress-bar--primary hide-on-desktop">
+                <div class="progress-bar__fill"></div>
+            </div>
+            <header class="main-post-wrapper">
+                <div class="slides">
+                    <article class="main-post main-post--active">
+                        <div class="main-post__image">
+                            <img src="./images/195_626.jpg" alt="dilna-worhshop-horak vaclav ferrari">
+                        </div>
+                        <div class="main-post__content">
+                            <div class="main-post__tag-wrapper">
+                                <span class="main-post__tag">News</span>
+                            </div>
+                            <h1 class="main-post__title">
+                                Václav Horák / Perfect in every detail
+                            </h1>
+                            <a class="main-post__link" href="#">
+                                <span class="main-post__link-text">find out more</span>
+                                <svg
+                                    class="main-post__link-icon main-post__link-icon--arrow"
+                                    width="37"
+                                    height="12"
+                                    viewBox="0 0 37 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path d="M0 6H36.0001M36.0001 6L31.0001 1M36.0001 6L31.0001 11" stroke="white"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="main-post main-post--not-active">
+                        <div class="main-post__image">
+                            <img src="./images/dilna4.jpg" alt="dilna-worhshop-horak vaclav ferrari">
+                        </div>
+                        <div class="main-post__content">
+                            <div class="main-post__tag-wrapper">
+                                <span class="main-post__tag">Video</span>
+                            </div>
+                            <h1 class="main-post__title">
+                                Václav Horák / Home made models
+                                <br>
+                                Since 1970
+                                <br>
+                            </h1>
+                            <a class="main-post__link" href="#">
+                                <svg
+                                    class="main-post__link-icon main-post__link-icon--play-btn"
+                                    width="30"
+                                    height="30"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <circle
+                                        cx="10"
+                                        cy="10"
+                                        r="9"
+                                        stroke="#C20000"
+                                        stroke-width="2"
+                                    />
+                                    <path d="M14 10L8 6V14L14 10Z" fill="white"/>
+                                </svg>
+                                <span class="main-post__link-text">play video</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="main-post main-post--not-active">
+                        <div class="main-post__image">
+                            <img src="./images/xxx_web.jpg" alt="horak vaclav ferrari">
+                        </div>
+                        <div class="main-post__content">
+                            <div class="main-post__tag-wrapper">
+                                <span class="main-post__tag">News</span>
+                            </div>
+                            <h1 class="main-post__title">
+                                Václav Horák / Exlusive Ferrari models
+                            </h1>
+                            <a class="main-post__link" href="#">
+                                <span class="main-post__link-text">find out more</span>
+                                <svg
+                                    class="main-post__link-icon main-post__link-icon--arrow"
+                                    width="37"
+                                    height="12"
+                                    viewBox="0 0 37 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path d="M0 6H36.0001M36.0001 6L31.0001 1M36.0001 6L31.0001 11" stroke="white"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </header>
+            <div class="posts-wrapper hide-on-mobile">
+                <article class="post post--active">
+                    <div class="progress-bar">
+                        <div class="progress-bar__fill"></div>
+                    </div>
+                    <header class="post__header">
+                        <span class="post__tag">News</span>
+                        <p class="post__published">horak</p>
+                    </header>
+                    <h2 class="post__title">Model 166 MM</h2>
+                </article>
+                <article class="post">
+                    <div class="progress-bar">
+                        <div class="progress-bar__fill"></div>
+                    </div>
+                    <header class="post__header">
+                        <span class="post__tag">Video</span>
+                        <p class="post__published">Dilna Praha 2023</p>
+                    </header>
+                    <h2 class="post__title">Video / Výroba komponent</h2>
+                </article>
+                <article class="post">
+                    <div class="progress-bar">
+                        <div class="progress-bar__fill"></div>
+                    </div>
+                    <header class="post__header">
+                        <span class="post__tag">News</span>
+                        <p class="post__published"></p>
+                    </header>
+                    <h2 class="post__title">Car models</h2>
+                </article>
+            </div>
+        </div>
+        <!-- Responsive Video Section -->
+        <!-- <video controls width="100%" height="auto" loading="lazy">
+            <source src="tata-dilna.mp4" type="video/mp4">
+            <source src="tata-dilna.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video> -->
+        <div class="responsive-video" style="position: relative; max-width: 100%; height: auto; cursor: pointer;">
+            <div class="video-placeholder" style="position: relative; width: 100%; padding-bottom: 56.25%;">
+                <div class="play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; background-color: transparent; border-radius: 50%; display: flex; align-items: center; justify-content: center; overflow: hidden; z-index: 1;">
+                    <span id="playPauseButton" style="font-size: 3em; color: white; position: absolute;">▶</span>
+                </div>
+            </div>
+            <video
+                width="100%"
+                height="auto"
+                loading="lazy"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+            >
+                <source src="tata-dilna.mp4" type="video/mp4">
+                <!-- <source src="tata-dilna.webm" type="video/webm"> -->
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <script>
+            var videoContainer = document.querySelector('.responsive-video');
+            var video = document.querySelector('.responsive-video video');
+            var playButton = document.getElementById('playPauseButton');
+        
+            videoContainer.addEventListener('click', function() {
+                if (video.paused || video.ended) {
+                    video.play();
+                    playButton.style.opacity = '0'; //opacity to 0 when video is playing
+                } else {
+                    video.pause();
+                    playButton.style.opacity = '1'; // opacity to 1 when video is paused
+                }
+            });
+        
+            video.addEventListener('ended', function() {
+                playButton.style.opacity = '1'; // Set opacity to 1 when video ends
+            });
+        </script>
+        <!--         <div class="responsive-video">
+            <div class="video-placeholder">
+                <div class="play-button"></div>
+            </div>
+            <video
+                controls
+                width="100%"
+                height="auto"
+                loading="lazy"
+            >
+                <source src="tata-dilna.mp4" type="video/mp4">
+                <source src="tata-dilna.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </div> -->
+        <!--  <main style="min-height: 100vh; background: rgb(255, 255, 255);"></main> -->
+        <!------------------------ section  modely a text vedle sebe flex pod sebou  --------------------->
+        <div class="container__modely">
+            <div class="text">
+                <div class="Headline__chapter__A">
+                    <div class="Chapter__chapter__1">
+                        <strong class="Chapter__prefix" style="opacity: 1;">Modely</strong>
+                        <span class="Chapter__line-caption">
+                            <i style=""></i>
+                        </span>
+                        <strong style="opacity: 1;">Od roku 1971.</strong>
+                    </div>
+                </div>
+                <h3 class="text__title">Modely</h3>
+                <p class="text__content">
+                    Velikost 1:8 / 1:18
+                    <br>
+                    Každý kus je originál.
+                    <br>
+                    S láskou a pečlivostí pro každý detail
+                    <br>
+                    Slavné modely aut Ferrari.
+                    <br>
+                    Ruční výroba od A do Z.
+                    <br>
+                    Na koleni doma v panelovém domě v Praze.
+                </p>
+            </div>
+            <div class="image">
+                <!-- image -->
+                <img src="/images/dily-modely.jpg" alt="Your Image" class="image__content">
+            </div>
+        </div>
+        <div class="images__vedlesebe">
+            <div class="image">
+                <img src="/images/250cary.png" alt="Your Image" class="image__content">
+            </div>
+            <div class="image">
+                <img src="/images/0179_home.png" alt="Your Image" class="image__content">
+            </div>
+        </div>
+        <footer class="footer">
+            <p>
+                2023 &copy; Vaclav Horak modely Ferrari / 2023 &copy; Marketa Horak
+                <!-- <br> -->
+                / 
+            All rights reserved.
+            </p>
+        </footer>
+        <script src="stylecarousel.js"></script>
+    </body>
+</html>

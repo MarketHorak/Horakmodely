@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.citace {
+  padding: 50px 30px;
+  background-color: black;
+  min-width: 200px;
+  font-size: 2em;
+  font-style: italic;
+  color: aliceblue;
+  z-index: 3;
+  text-align: left;
+  font-family: Baskerville serif;
+}
+
+@media (min-width: 600px) {
+  .citace {
+    text-align: left; /* Align text to the left */
+    padding: 40px 30px; /* Add padding for space around text */
+  }
+}
+
+@media (min-width: 800px) {
+  .citace {
+    font-size: 4em;
+  }
+}

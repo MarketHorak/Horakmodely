@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hamburger menu</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="stylecarousel.css">
+        <link rel="stylesheet" href="stylevideo.css">
+        <link rel="stylesheet" href="styleonas.css">
+    </head>
+    <body>
+        <nav class="menu">
+            <div class="menu__header">
+                <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+                <label for="menu-checkbox" class="menu__toggler">Menu ☰</label>
+                <!--  <div class="menu__logo"> -->
+                <a href="/" class="menu__logo">
+                    <img class="logo--img" src="tata-logo-bila-obdelnik mensi.png" alt="Logo">
+                </a>
+                <!--   </div> -->
+            </div>
+            <div class="menu__body">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="/onas.html">O nás</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/modely.html">Modely</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/napsali.html">Napsali o nás</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/sluzby.html">Služby</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="aktuality.html">Aktuality</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script>
+			var checkbox = document.querySelector('.menu__checkbox');
+			var list = document.querySelector('.menu__list');
+
+			checkbox.addEventListener('change', function() {
+   				if(this.checked) {
+      		 list.classList.add('show');
+  			 } else {
+       		list.classList.remove('show');
+  				 }
+				});
+        </script>
+        <!------------------------- image ---------------------->
+        <div class="image">
+            <img src="/images_onas/dedina.png" alt="Your Image" class="image__content">
+        </div>
+        <!--         section  modely a text vedle sebe flex pod sebou  -->
+        <div class="container__modely">
+            <div class="text">
+                <div class="Headline__chapter__A">
+                    <div class="Chapter__chapter__1">
+                        <strong class="Chapter__prefix" style="opacity: 1;">Václav Horák</strong>
+                        <span class="Chapter__line-caption">
+                            <i style=""></i>
+                        </span>
+                        <strong style="opacity: 1;">Modelář / Konstruktér.</strong>
+                    </div>
+                </div>
+                <h2 class="text__title">* 1948</h2>
+                <h3 class="text__title">Historie</h3>
+                <p class="text__content">
+                    <br>
+                    Pochází z Českých Budějovic
+                    <br>
+                    Do Prahy přišel v roce a zde zapustil kořeny
+                    <br>
+                    Dlouhou dobu pracoval ve firmě Praga
+                    <br>
+                    Usadil se v panelovém domě v blízkosti letiště
+                    <br>
+                    Svůj první model postavil ve svých 18 letech a následně rozsekal sekerou.
+                    <br>
+                </p>
+            </div>
+            <div class="image">
+                <!-- image -->
+                <img src="/images_onas/dilna3.jpg" alt="Your Image" class="image__content">
+            </div>
+        </div>
+        <div class="citace">
+            "Pro mě
+            <br>je jeden milimetr
+            <br> jako pro ostatní
+            <br>
+            jeden metr"
+        </div>
+        <div class="image">
+            <!-- image -->
+            <img src="/images_onas/166_0463.JPG" alt="Your Image" class="image__content">
+        </div>
+        <div class="image">
+            <!-- image -->
+            <img src="/images_onas/166onas.JPG" alt="Your Image" class="image__content">
+        </div>
+        <!--    <main style="min-height: 100vh; background: rgb(0, 0, 0);"></main> -->
+        <footer class="footer">
+            <p>
+                2023 &copy; Vaclav Horak modely Ferrari / 2023 &copy; Marketa Horak
+                <!-- <br> -->
+                / 
+        All rights reserved.
+            </p>
+        </footer>
+    </body>
+</html>

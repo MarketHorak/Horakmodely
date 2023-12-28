@@ -1,0 +1,98 @@
+/* 
+
+.responsive-video {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+ 
+}
+
+
+.responsive-video video::-webkit-media-controls-start-playback-button {
+    display: none;
+}
+
+
+.responsive-video video::before {
+    content: '\25B6'; 
+    font-size: 3em;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+
+.responsive-video video::-webkit-media-controls {
+    background-color: rgba(0, 0, 0, 0.7);
+
+    padding: 5px;
+} */
+
+/* /// -------------------------------- */
+
+/* .responsive-video {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+   
+}
+
+.video-placeholder {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    cursor: pointer;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.play-button:before {
+    content: "";
+    border-style: solid;
+    border-width: 12px 0 12px 20px;
+    border-color: transparent transparent transparent white;
+} */
+
+
+
+
+/* .responsive-video {
+    max-width: 100%;
+    height: auto;} */
+/*     margin-top: 20px;  *//* Adjust as needed */
+
+
+
+/* .responsive-video video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+} */
+
+/* Optional: Style the progress bar and fill for better visibility */
+/* .responsive-video video::-webkit-media-controls {
+    display: none !important;
+} */
+/* 
+.responsive-video video::-webkit-media-controls-enclosure {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 5px;
+} */
