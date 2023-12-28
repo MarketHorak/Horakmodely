@@ -119,7 +119,7 @@ body {
   }
   .images__vedlesebe >.image{
  /*    height: 100%; */
-    max-height: fit-content;
+    /* max-height: fit-content; */
 
   }
 }
