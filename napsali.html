@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kontakt</title>
+        <link rel="stylesheet" href="stylenapsali.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="menu">
+            <div class="menu__header">
+                <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+                <label for="menu-checkbox" class="menu__toggler">Menu ☰</label>
+                <!--  <div class="menu__logo"> -->
+                <a href="/" class="menu__logo">
+                    <img class="logo--img" src="tata-logo-bila-obdelnik mensi.png" alt="Logo">
+                </a>
+                <!--   </div> -->
+            </div>
+            <div class="menu__body">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="/onas.html">O nás</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/modely.html">Modely</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/napsali.html">Napsali o nás</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/sluzby.html">Služby</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="aktuality.html">Aktuality</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script>
+			var checkbox = document.querySelector('.menu__checkbox');
+			var list = document.querySelector('.menu__list');
+
+			checkbox.addEventListener('change', function() {
+   				if(this.checked) {
+      		 list.classList.add('show');
+  			 } else {
+       		list.classList.remove('show');
+  				 }
+				});
+        </script>
+        <!------------------------- image ---------------------->
+        <!--  <div class="carousel__container"> -->
+        <!-- </div> -->
+        <div class="carousel-container">
+            <div class="image__carousel">
+                <img src="/images_napsali/auto_1.jpg" alt="Your Image" class="image__content">
+                <div class="headline__carousel">
+                    <p class="headline__carousel--text">
+                        Jako
+                        <!-- <br> --> skutečný</p>
+                </div>
+            </div>
+        </div>
+        <div class="text__form">
+            <div class="text">
+                <div class="Headline__chapter__A">
+                    <div class="Chapter__chapter__1">
+                        <strong class="Chapter__prefix" style="opacity: 1;">Václav Horák</strong>
+                        <span class="Chapter__line-caption">
+                            <i style=""></i>
+                        </span>
+                        <strong style="opacity: 1;">Modelář / Konstruktér.</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------- flex text a obr ---------------------->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper--content">
+                        <div class="swiper--text">
+                            <h2>SUPERCARS</h2>
+                            <p>Published 2008 / Germany</p>
+                            <a href="https:/" target="_blank">Read more</a>
+                        </div>
+                        <div class="swiper--image">
+                            <img id="swiperImage" src="images_napsali/ferrarisc.jpg" alt="Slide 1">
+                            <div class="button-change--container">
+                                <div class="image-change-button prev" onclick="changeImage('prev')">&lt;</div>
+                                <div></div>
+                                <div class="image-change-button next" onclick="changeImage('next')">&gt;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+            <script>
+            var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+    var images = [
+        "images_napsali/ferrarisc.jpg",
+        "images_napsali/1.jpg",
+        "images_napsali/2a.jpg",
+        "images_napsali/3.jpg",
+        // Add more image URLs as needed
+    ];
+
+    var currentImageIndex = 0;
+
+    // Function to change the image
+    function changeImage(direction) {
+        if (direction === 'next') {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+        } else {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+        }
+
+        var nextImage = images[currentImageIndex];
+        document.getElementById('swiperImage').src = nextImage;
+    }
+            </script>
+            <!-- // ------------------------- footer ----------------------------------// -->
+            <footer class="footer footer__kontakt">
+                <p>
+                    2023 &copy; Vaclav Horak modely Ferrari / 2023 &copy; Marketa Horak
+                    <!-- <br> -->
+                    / 
+                All rights reserved.
+                </p>
+            </footer>
+        </body>
+    </html>

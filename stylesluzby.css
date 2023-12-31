@@ -19,18 +19,19 @@
 
 }
 
-.Container__wrapper {
+.container__wrapper {
 
 /*     display: flex; */
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
 }
+ 
+.description__section {
+  
+} 
 
-.Description__section {
-/*     display: flex;   */ 
-}
-.Description__subtitle {
+.description__subtitle {
  
 
     font-size: 16px;
@@ -38,7 +39,7 @@
     margin-bottom: 16px;
     color: #da291c;
 }
-.Description__description{
+.description__description{
 
     font-weight: normal;
     font-stretch: normal;
@@ -49,14 +50,14 @@
     margin-bottom: 30px;
 }
 
-.Prices__section {
+.prices__section {
 /* display: grid;
     grid-template-columns: 1fr 1fr; 
     gap: 10px; */
     max-width: 500px; 
 }
 
-.Prices__cell {
+.prices__cell {
     display: grid;
     grid-template-columns: 1fr auto; 
     align-items: center; 
@@ -77,6 +78,7 @@
     margin-top: 40px;
     margin-bottom: 50px;
 }
+
 .button__odkaz {
     text-decoration: none;
     padding:10px;
