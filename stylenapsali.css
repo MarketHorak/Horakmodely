@@ -111,11 +111,9 @@
 /*     justify-content: space-between; */
 }
 
-.image-change-button {
-    
+/* .image-change-button {
    
-   
-}
+} */
 @media screen and (max-width: 768px) {
     .swiper--content {
         grid-template-columns: 1fr; /* Change to a single column on smaller screens */
@@ -144,9 +142,9 @@
     cursor: pointer;
     font-size: 24px; /* Adjust the font size as needed */
     color: #333; /* Adjust the color as needed */
-    /* position: absolute;
-    top: 50%;
-    transform: translateY(-50%); */
+   /*  padding-right:40px;
+    padding-left:40px; */
+    
 }
 
 /* .image-change-button.next {

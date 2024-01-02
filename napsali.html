@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kontakt</title>
+        <title>Napsali o nas</title>
         <link rel="stylesheet" href="stylenapsali.css">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -96,9 +96,9 @@
                         <div class="swiper--image">
                             <img id="swiperImage" src="images_napsali/ferrarisc.jpg" alt="Slide 1">
                             <div class="button-change--container">
-                                <div class="image-change-button prev" onclick="changeImage('prev')">&lt;</div>
+                                <div class="image-change-button prev" onclick="changeImage('prev')">&lt;&nbsp;&nbsp;&nbsp;&nbsp;</div>
                                 <div></div>
-                                <div class="image-change-button next" onclick="changeImage('next')">&gt;</div>
+                                <div class="image-change-button next" onclick="changeImage('next')">&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
                             </div>
                         </div>
                     </div>
@@ -145,7 +145,71 @@
         document.getElementById('swiperImage').src = nextImage;
     }
             </script>
+      
+
+
+                <!------------------------- flex text a obr ---------------------->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper--content">
+                        <div class="swiper--text">
+                            <h2>Japanese cars</h2>
+                            <p>Published 2020 / Germany</p>
+                            <a href="https:/" target="_blank">Read more</a>
+                        </div>
+                        <div class="swiper--image">
+                            <img id="swiperImage2" src="images_napsali/1jap.jpg" alt="Slide 1">
+                            <div class="button-change--container">
+                                <div class="image-change-button prev" onclick="changeImage('prev')">&lt;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                                <div></div>
+                                <div class="image-change-button next" onclick="changeImage('next')">&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+            <script>
+            var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+    var images = [
+        "images_napsali/1jap.jpg",
+        "images_napsali/2jap.jpg",
+        
+    ];
+
+    var currentImageIndex = 0;
+
+    // Function to change the image
+    function changeImage(direction) {
+        if (direction === 'next') {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+        } else {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+        }
+
+        var nextImage = images[currentImageIndex];
+        document.getElementById('swiperImage2').src = nextImage;
+    }
+            </script>
             <!-- // ------------------------- footer ----------------------------------// -->
+
             <footer class="footer footer__kontakt">
                 <p>
                     2023 &copy; Vaclav Horak modely Ferrari / 2023 &copy; Marketa Horak
