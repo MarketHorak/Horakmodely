@@ -90,7 +90,7 @@
                     <div class="swiper--content">
                         <div class="swiper--text">
                             <h2>SUPERCARS</h2>
-                            <p>Published 2008 / Germany</p>
+                            <p>Published 2020 / Česká republika</p>
                             <a href="https:/" target="_blank">Read more</a>
                         </div>
                         <div class="swiper--image">
@@ -109,7 +109,7 @@
                 <div class="swiper-button-prev"></div>
             </div>
         </div>
-            <script>
+        <script>
             var swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         spaceBetween: 0,
@@ -144,22 +144,19 @@
         var nextImage = images[currentImageIndex];
         document.getElementById('swiperImage').src = nextImage;
     }
-            </script>
-      
-
-
-                <!------------------------- flex text a obr ---------------------->
+        </script>
+        <!------------------------- SWIPER 2--------------------->
         <div class="swiper-container2">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="swiper--content">
                         <div class="swiper--text">
-                            <h2>Japanese cars</h2>
-                            <p>Published 2020 / Germany</p>
+                            <h2>JAPANESE CARS</h2>
+                            <p>Published 2021 / Japan</p>
                             <a href="https:/" target="_blank">Read more</a>
                         </div>
                         <div class="swiper--image">
-                            <img id="swiperImage2" src="images_napsali/1jap.jpg" alt="Slide 1">
+                            <img id="swiperImage2" src="images_napsali/1japa.jpg" alt="Slide 1">
                             <div class="button-change--container2">
                                 <div class="image-change-button2 prev" onclick="changeImage2('prev')">&lt;&nbsp;&nbsp;&nbsp;&nbsp;</div>
                                 <div></div>
@@ -174,8 +171,8 @@
                 <div class="swiper-button-prev"></div>
             </div>
         </div>
-            <script>
-            var swiper2 = new Swiper2('.swiper-container2', {
+        <script>
+        var swiper2 = new Swiper('.swiper-container2',  {
         slidesPerView: 1,
         spaceBetween: 0,
         navigation: {
@@ -188,35 +185,35 @@
         },
     });
 
-    var images = [
-        "images_napsali/1jap.jpg",
-        "images_napsali/2jap.jpg",
+    var images2 = [
+        "images_napsali/1japa.jpg",
+        "images_napsali/2japa.jpg",
+        "images_napsali/3japa.jpg",
         
     ];
 
-    var currentImageIndex = 0;
+    var currentImageIndex2 = 0;
 
-    // Function to change the image
-    function changeImage2(direction) {
-        if (direction === 'next') {
-            currentImageIndex = (currentImageIndex + 1) % images.length;
-        } else {
-            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-        }
-
-        var nextImage = images[currentImageIndex];
-        document.getElementById('swiperImage2').src = nextImage;
+// Function to change the image for the second slider
+function changeImage2(direction) {
+    if (direction === 'next') {
+        currentImageIndex2 = (currentImageIndex2 + 1) % images2.length;
+    } else {
+        currentImageIndex2 = (currentImageIndex2 - 1 + images2.length) % images2.length;
     }
-            </script>
-            <!-- // ------------------------- footer ----------------------------------// -->
 
-            <footer class="footer footer__kontakt">
-                <p>
-                    2023 &copy; Vaclav Horak modely Ferrari / 2023 &copy; Marketa Horak
-                    <!-- <br> -->
-                    / 
+    var nextImage2 = images2[currentImageIndex2];
+    document.getElementById('swiperImage2').src = nextImage2;
+}
+        </script>
+        <!-- // ------------------------- footer ----------------------------------// -->
+        <footer class="footer footer__kontakt">
+            <p>
+                2023 &copy; Vaclav Horak modely Ferrari / 2023 &copy; Marketa Horak
+                <!-- <br> -->
+                / 
                 All rights reserved.
-                </p>
-            </footer>
-        </body>
-    </html>
+            </p>
+        </footer>
+    </body>
+</html>
