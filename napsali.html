@@ -128,7 +128,7 @@
         "images_napsali/1.jpg",
         "images_napsali/2a.jpg",
         "images_napsali/3.jpg",
-        // Add more image URLs as needed
+       
     ];
 
     var currentImageIndex = 0;
@@ -149,7 +149,7 @@
 
 
                 <!------------------------- flex text a obr ---------------------->
-        <div class="swiper-container">
+        <div class="swiper-container2">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="swiper--content">
@@ -160,10 +160,10 @@
                         </div>
                         <div class="swiper--image">
                             <img id="swiperImage2" src="images_napsali/1jap.jpg" alt="Slide 1">
-                            <div class="button-change--container">
-                                <div class="image-change-button prev" onclick="changeImage('prev')">&lt;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                            <div class="button-change--container2">
+                                <div class="image-change-button2 prev" onclick="changeImage2('prev')">&lt;&nbsp;&nbsp;&nbsp;&nbsp;</div>
                                 <div></div>
-                                <div class="image-change-button next" onclick="changeImage('next')">&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
+                                <div class="image-change-button2 next" onclick="changeImage2('next')">&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
                             </div>
                         </div>
                     </div>
@@ -175,7 +175,7 @@
             </div>
         </div>
             <script>
-            var swiper = new Swiper('.swiper-container', {
+            var swiper2 = new Swiper2('.swiper-container2', {
         slidesPerView: 1,
         spaceBetween: 0,
         navigation: {
@@ -197,7 +197,7 @@
     var currentImageIndex = 0;
 
     // Function to change the image
-    function changeImage(direction) {
+    function changeImage2(direction) {
         if (direction === 'next') {
             currentImageIndex = (currentImageIndex + 1) % images.length;
         } else {

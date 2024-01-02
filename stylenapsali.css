@@ -102,7 +102,7 @@
     height: auto; /* Maintain aspect ratio */
 }
 
-.button-change--container {
+.button-change--container,.button-change--container2 {
     display:grid;
     grid-template-columns: 30%  30% 30%  ;
     text-align: center;
@@ -138,7 +138,7 @@
 .swiper-button-prev {
     color: white;
 } */
-.image-change-button {
+.image-change-button,.image-change-button2 {
     cursor: pointer;
     font-size: 24px; /* Adjust the font size as needed */
     color: #333; /* Adjust the color as needed */
