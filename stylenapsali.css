@@ -34,6 +34,13 @@
     font-weight: 700;
     line-height: 1;
 }
+.headline__carousel--text--maly {
+    font-size: 2em;
+    color: aliceblue;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+    line-height: 1;
+}
 
 @media (min-width: 600px) {
     .headline__carousel--text {
