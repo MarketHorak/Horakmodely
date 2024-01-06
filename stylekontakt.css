@@ -14,8 +14,6 @@ body {
   background-color: rgb(255, 255, 255);
   /* background-image: url(/images_sluzby/IMG_0155\ kopie.jpg);
 	background-repeat: no-repeat;*/
-	
- 
 }
 
 /* ------------------------- */
@@ -116,11 +114,54 @@ input[type="email"]:not(:placeholder-shown):valid {
   background-color: rgb(255, 251, 243);
 }
 
+/* .zkouska {
+  background-color: blue;
+  width: 100%;
+  height: 200px;
+} */
+
+/* ----------------- image  */
+/* .form__image {
+  padding-top: 40px;
+  width: 100%;
+  max-width: 100%; 
+  display: flex;
+  justify-content: center;
+}
+
+.form__image img {
+  max-width: 100%; 
+  height: auto; 
+} */
+.form__map {
+  padding-top: 40px;
+  width: 100%;
+  max-width: 100%;  
+  display: flex;
+  justify-content: center; 
+}
+
+.form__map iframe {
+  max-width: 100%; 
+  height: auto; 
+}
+/* -------------------------------------------
+ */
+/* @media screen and (min-width: 464px) {
+  .form__image {
+  
+    max-width: 400px; 
+  }
+} */
 
 
+@media screen and (min-width: 464px) {
+  .form__map {
+    max-width: 400px;
+  }
+}
 
 @media screen and (min-width: 700px) {
-
   body {
     /* min-height: 1000px; */
   }
@@ -131,11 +172,16 @@ input[type="email"]:not(:placeholder-shown):valid {
     gap: 40px;
   }
 
-  .footer__kontakt{
-	position: absolute;
-	margin-bottom: 0;
-		bottom: 0;
-		width: 100%;
-	}
-  
+  /* .form__image {
+    max-width: 1000px; 
+  } */
+  .form__map {
+    max-width: 1000px;
+  }
+  .footer__kontakt {
+    /* 	position: absolute; */
+    margin-bottom: 0;
+    bottom: 0;
+    width: 100%;
+  }
 }
