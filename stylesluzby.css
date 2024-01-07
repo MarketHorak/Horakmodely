@@ -15,7 +15,7 @@
     font-size: 1.2em;
     line-height: 1.27em;
     text-transform: uppercase;
-    color: #da291c; /* !important; */
+    color: red
 
 }
 
@@ -37,7 +37,7 @@
     font-size: 16px;
     line-height: 1.5em;
     margin-bottom: 16px;
-    color: #da291c;
+    color: red;
 }
 .description__description{
 
