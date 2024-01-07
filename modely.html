@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Napsali o nas</title>
         <link rel="stylesheet" href="stylenapsali.css">
+        <link rel="stylesheet" href="stylemodely.css">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,48 +26,63 @@
             <div class="menu__body">
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a class="menu__link" href="/onas.html">O nás</a>
+                        <a class="menu__link active" href="/onas.html">O nás</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="/modely.html">Modely</a>
+                        <a class="menu__link active" href="/modely.html">Modely</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="/napsali.html">Napsali o nás</a>
+                        <a class="menu__link active" href="/napsali.html">Napsali o nás</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="/sluzby.html">Služby</a>
+                        <a class="menu__link active" href="/sluzby.html">Služby</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="aktuality.html">Aktuality</a>
+                        <a class="menu__link active" href="/aktuality.html">Aktuality</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="kontakt.html">Kontakt</a>
+                        <a class="menu__link active" href="/kontakt.html">Kontakt</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <script>
-			var checkbox = document.querySelector('.menu__checkbox');
-			var list = document.querySelector('.menu__list');
-
-			checkbox.addEventListener('change', function() {
-   				if(this.checked) {
-      		 list.classList.add('show');
-  			 } else {
-       		list.classList.remove('show');
-  				 }
-				});
-        </script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var checkbox = document.querySelector('.menu__checkbox');
+                var list = document.querySelector('.menu__list');
+            
+                checkbox.addEventListener('change', function() {
+                    if (this.checked) {
+                        list.classList.add('show');
+                    } else {
+                        list.classList.remove('show');
+                    }
+                });
+            
+                // Get the current page URL
+                var currentURL = window.location.pathname;
+            
+                // Find the corresponding menu item and add the 'active' class
+                var menuLinks = document.querySelectorAll('.menu__link');
+                menuLinks.forEach(function(link) {
+                    if (link.getAttribute('href') === currentURL) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+            </script>
         <!------------------------- image ---------------------->
         <!--  <div class="carousel__container"> -->
         <!-- </div> -->
         <div class="carousel-container">
             <div class="image__carousel">
-                <img src="/images_napsali/auto_1.jpg" alt="Your Image" class="image__content">
+                <img src="/images/250 home_kopie3.png" alt="Your Image" class="image__content">
                 <div class="headline__carousel">
-                    <p class="headline__carousel--text">
-                        Jako
-                        <!-- <br> --> skutečný</p>
+                    <span class="headline__carousel--text--maly ">MODELY</span>
+                    <p class="headline__carousel--text modely__headline__carousel--text" >
+                     Ferrari
+                        <!-- <br> --> </p>
+                       
                 </div>
             </div>
         </div>
@@ -83,6 +99,6 @@
                 </div>
             </div>
         </div>
-    
+        <script src="style.js"></script> 
 </body>
 </html>

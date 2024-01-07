@@ -72,7 +72,10 @@ body {
 .menu__list.show {
   display: block;
 }
+.menu__link.active {
 
+  color: rgb(241, 28, 28);
+}
 @media screen and (min-width: 550px) {
   .menu__list {
     font-size: 0.9em;
@@ -112,6 +115,8 @@ body {
 
     /* border-right:2px solid white; */
   }
+
+
   .images__vedlesebe{
     display: grid;
     grid-template-columns: 1fr 1fr;
