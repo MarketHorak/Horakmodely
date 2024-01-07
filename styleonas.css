@@ -16,8 +16,8 @@ body {
 
 @media (min-width: 600px) {
   .citace {
-    text-align: left; /* Align text to the left */
-    padding: 40px 30px; /* Add padding for space around text */
+    text-align: left; 
+    padding: 40px 30px;
   }
 }
 
