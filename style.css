@@ -117,12 +117,12 @@ body {
   }
 
 
-  .images__vedlesebe{
+  .images__nexttoeach{
     display: grid;
     grid-template-columns: 1fr 1fr;
     
   }
-  .images__vedlesebe >.image{
+  .images__nexttoeach >.image{
  /*    height: 100%; */
     /* max-height: fit-content; */
 
@@ -178,15 +178,10 @@ body {
 .Chapter__chapter__1 {
   display: flex;
   align-items: center;
-  -webkit-font-smoothing: antialiased;
-  /*  -moz-font-smoothing: antialiased;
-    -o-font-smoothing: antialiased; */
-  font-weight: lighter;
   font-stretch: normal;
   letter-spacing: 1px;
   font-size: 0.6em;
   line-height: 1.27em;
-  text-transform: uppercase;
   text-transform: uppercase;
   color: red;
 }
@@ -209,6 +204,11 @@ body {
     width: 100%;
     height: 100%;
     background: currentColor;
+}
+
+.Chapter__chapter__1.font--bigger {
+  font-size: 1em;
+
 }
 
 @media (min-width: 600px) {
