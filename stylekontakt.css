@@ -114,6 +114,9 @@ input[type="email"]:not(:placeholder-shown):valid {
   background-color: rgb(255, 251, 243);
 }
 
+.form__email{
+  margin-top: 15px;
+}
 /* .zkouska {
   background-color: blue;
   width: 100%;
@@ -133,8 +136,12 @@ input[type="email"]:not(:placeholder-shown):valid {
   max-width: 100%; 
   height: auto; 
 } */
-.form__map {
+
+h2 {
   padding-top: 40px;
+}
+.form__map {
+  
   width: 100%;
   max-width: 100%;  
   display: flex;
