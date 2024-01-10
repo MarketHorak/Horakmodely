@@ -219,6 +219,71 @@ function changeImage2(direction) {
     document.getElementById('swiperImage2').src = nextImage2;
 }
         </script>
+
+
+
+      <!------------------------- SWIPER 3--------------------->
+      <div class="swiper-container3">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="swiper--content">
+                    <div class="swiper--text">
+                        <h2>MODEL FAHRZEUG</h2>
+                        <p>Published 1996 / Germany</p>
+                        <a href="https:/" target="_blank">Read more</a>
+                    </div>
+                    <div class="swiper--image">
+                        <img id="swiperImage3" src="images_napsali/modelF.jpg" alt="Slide 1">
+                        <div class="button-change--container2">
+                            <div class="image-change-button2 prev" onclick="changeImage3('prev')">&lt;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                            <div></div>
+                            <div class="image-change-button2 next" onclick="changeImage3('next')">&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <script>
+    var swiper3 = new Swiper('.swiper-container3',  {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+
+var images3 = [
+    "images_napsali/modelF.jpg",
+    "images_napsali/modelF1.jpg",
+    "images_napsali/modelF2.jpg",
+
+    
+];
+
+var currentImageIndex2 = 0;
+
+// Function to change the image for the second slider
+function changeImage3(direction) {
+    if (direction === 'next') {
+        currentImageIndex2 = (currentImageIndex2 + 1) % images3.length;
+    } else {
+        currentImageIndex2 = (currentImageIndex2 - 1 + images3.length) % images3.length;
+    }
+
+    var nextImage3 = images3[currentImageIndex2];
+    document.getElementById('swiperImage3').src = nextImage3;
+}
+    </script>
         <!-- // ------------------------- footer ----------------------------------// -->
         <footer class="footer footer__kontakt">
             <p>
